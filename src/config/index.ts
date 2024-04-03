@@ -1,0 +1,8 @@
+export const {
+  PORT,
+  ENV,
+  SHOPIFY_STORE_URL,
+  SHOPIFY_API_VERSION,
+  SHOPIFY_PASSWORD,
+  SHOPIFY_API_KEY,
+} = process.env

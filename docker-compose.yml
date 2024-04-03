@@ -1,0 +1,13 @@
+version: '3.3'
+services:
+  host:
+    container_name: platform-proxy
+    env_file:
+      - .env
+    environment:
+      - PORT
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "$PORT:$PORT"
